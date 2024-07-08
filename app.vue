@@ -1,5 +1,5 @@
 <template>
   <div>
-    <Test></Test>
+    <NuxtIsland name="Test"></NuxtIsland>
   </div>
 </template>

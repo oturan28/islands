@@ -3,7 +3,7 @@ interface Props {
   name?: string;
 }
 defineProps<Props>();
-const { data } = useFetch("https://rickandmortyapi.com/api/character")
+const { data } = await useFetch("https://rickandmortyapi.com/api/character")
 </script>
 <template>
   <pre>{{ data }}</pre>
