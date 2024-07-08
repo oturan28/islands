@@ -3,6 +3,9 @@ export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },
   experimental: {
-    componentIslands: 'local+remote'
+    componentIslands: 'local+remote',
+    asyncContext: true,
+    asyncEntry: true,
+    externalVue: true,
   }
 })
