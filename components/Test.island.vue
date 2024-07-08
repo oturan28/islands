@@ -1,12 +1,9 @@
 <script setup lang="ts">
-import {ref} from "vue";
-
-defineProps<{
-  text?: string;
-}>();
-const counter = ref(0)
+interface Props {
+  name?: string;
+}
+defineProps<Props>();
 </script>
 <template>
-  {{ text }}
-  <p @click="counter++">lösakdlsöakdlö {{ counter }}</p>
+  {{ name }}
 </template>
