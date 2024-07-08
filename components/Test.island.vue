@@ -1,9 +1,10 @@
+<script setup lang="ts">
+defineProps<{
+  text?: string;
+}>();
+const counter = ref(0)
+</script>
 <template>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
-  <p>ölsadklsöadkölsakdlö</p>
+  {{ text }}
+  <p @click="counter++">lösakdlsöakdlö {{ counter }}</p>
 </template>
